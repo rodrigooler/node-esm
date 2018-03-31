@@ -1,0 +1,22 @@
+{
+  "name": "node-esm",
+  "description": "ES Modules fast config and zero-dependency for Node 6+!",
+  "version": "0.1.0",
+  "author": "Rodrigo Oler <roodrigoprogrammer@gmail.com>",
+  "dependencies": {
+    "esm": "^3.0.14",
+    "koa": "^2.5.0",
+    "koa-route": "^3.2.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.17.2"
+  },
+  "license": "MIT",
+  "main": "index.js",
+  "private": false,
+  "repository": "git@github.com:rodrigooler/node-esm.git",
+  "scripts": {
+    "nodemon": "nodemon -r esm src/index.js",
+    "start": "node -r esm src/index.js"
+  }
+}
