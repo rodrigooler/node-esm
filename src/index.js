@@ -1,10 +1,9 @@
 import Koa from 'koa';
 
-import router from './routes';
+import message from './message';
 
 const app = new Koa();
 
 app
-    .use(router.routes())
-    .use(router.allowedMethods())
-    .listen(3000);  
+  .use(ctx => { ctx.body = message })
+  .listen(3000);
